@@ -1,0 +1,128 @@
+.freelanceProjects {
+  height: 100vh;
+  padding-top: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.MachineLearningTitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  position: relative;
+  color: #444;
+  overflow: hidden;
+  font-size: 30px;
+  letter-spacing: -2px;
+  height: 10vh;
+  line-height: 50px;
+
+}
+
+.hideText {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.project {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-card-front, .flip-card-back {
+  top : 100px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  height: 450px;
+  width: 300px;
+  margin-top: 10px;
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.3)
+  );
+
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+  border-radius: 150px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  opacity: 0;
+}
+
+
+
+.projectTitle {
+  height: 15vh;
+  padding-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  color: #444;
+  line-height: 4vh;
+  font-size: calc(10px + (20 - 15) * ((100vw - 375px) / (1600 - 375)));
+  opacity: 0;
+}
+
+.projectDescription {
+  height: 15vh;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "Gill Sans", Verdana;
+  color: #444;
+  font-size: calc(12px + (15 - 12) * ((100vw - 375px) / (1600 - 375)));
+  opacity: 0;
+}
+
+
+.tools,
+.techniques {
+  opacity: 0;
+  height: 7.5vh;
+  color: #444;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: calc(15px + (20 - 15) * ((100vw - 375px) / (1600 - 375)));
+}
+.tools p,
+.techniques p {
+  height: 7.5vh;
+  color: #444;
+  font-family: "Gill Sans", Verdana;
+  font-size: calc(10px + (15 - 10) * ((100vw - 375px) / (1600 - 375)));
+}
+
+.snapLine{
+  position: absolute;
+  stroke: #444;
+  stroke-width: 3;
+  fill: none;
+}
+.ballProject {
+  box-shadow: 0 5px 15px rgba(15, 52, 67, 0.5);
+  fill: #444;
+  visibility: hidden;
+
+}
+
+
+@media screen and (max-width:400px){
+  .MachineLearningTitle {
+    font-size: 25px;
+  }
+}

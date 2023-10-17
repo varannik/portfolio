@@ -1,0 +1,79 @@
+@font-face {
+  font-family: NSCB;
+  src: url("./fonts/NightStillComes_bold_final_sample.otf");
+}
+
+.App {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: rgb(31, 64, 55);
+  background: linear-gradient(
+    45deg,
+    rgba(31, 64, 55, 1) 0%,
+    rgba(153, 242, 200, 1) 50%,
+    rgba(31, 64, 55, 1) 100%
+  );
+  background-attachment: fixed;
+  
+}
+
+.parent {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+.MyJourney {
+  height: 300vh;
+}
+
+.myPathway {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  font-family: "Gill Sans", Verdana;
+  font-size: calc(7px + (15 - 7) * ((100vw - 375px) / (1600 - 375)));
+}
+
+.timeLine {
+  position: absolute;
+  stroke: #444;
+  stroke-width: 3;
+  fill: none;
+}
+
+.ball {
+  box-shadow: 0 5px 15px rgba(15, 52, 67, 0.5);
+  fill: #444;
+  z-index: 100;
+  visibility: hidden;
+}
+
+.headers {
+  fill: #fffbdf;
+  visibility: hidden;
+  font-size: calc(6px + (7 - 6) * ((100vw - 375px) / (1600 - 375)));
+}
+
+.ball_path {
+  box-shadow: 0 5px 15px rgba(15, 52, 67, 0.5);
+  fill: #444;
+}
+
+.text_year {
+  fill: #fffbdf;
+  visibility: hidden;
+  font-size: calc(4px + (5 - 4) * ((100vw - 375px) / (1600 - 375)));
+}
+
+.ExEdText {
+  white-space: nowrap;
+  opacity: 0;
+  fill: #fffbdf;
+  font-size: calc(10px + (15 - 10) * ((100vw - 375px) / (1600 - 375)));
+}
+
+svg {
+  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.4));
+}

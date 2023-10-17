@@ -1,0 +1,209 @@
+@font-face {
+    font-family: NSC ;
+    src: url('../fonts/NightStillComes_mine_final_sample.otf');
+}
+@font-face {
+    font-family: NSCB ;
+    src: url('../fonts/NightStillComes_bold_final_sample.otf');
+}
+
+
+.startSVG{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.landingContainer{
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.timeLine {
+    position: absolute;
+    stroke: #444;
+    stroke-width: 3;
+    fill: none;
+
+}
+.portfolio {
+
+    width: 280px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:200;
+    color: #444;
+    margin: 0;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -2px;
+    display: flex;
+    flex-flow: column ;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio p {
+    text-align: center;
+}
+
+.frame {
+    height:500px;
+    width:280px;
+    background: white;
+    background: linear-gradient(to right bottom,
+                                rgba(255, 255, 255,0.7),
+                                rgba(255, 255, 255,0.3));
+
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+    border-radius: 150px 150px 10px 10px;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.frame img {
+    background: rgba(255, 255, 255,0.1);
+    border-radius: 150px 150px 10px 10px;
+    border: 2px solid #444;
+    height:250px;
+    width:250px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+
+.name {
+    border: 2px solid #444;
+    font-family: "Gill Sans", Verdana;
+    font-weight: 300;
+    color: #444;
+    height: 30px;
+    width :250px;
+    font-size: 14px;
+    letter-spacing: 0px;
+    font-weight: bold;
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+}
+
+.jobTitle1 {
+    border: 2px solid #444;
+    font-family: "Montserrat", sans-serif;
+    /* font-weight: 100; */
+    padding: 2px;
+    color: #444;
+    margin: 0;
+    height: 145px;
+    width :250px;
+    margin-top: 2px;
+    font-size: 45px;
+    line-height: 45px;
+    letter-spacing: -2px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+
+
+}
+.jobTitle2 {
+    border: 2px solid #444;;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    padding-top: 5px;
+    color: #444;
+    margin-top: 2px;
+    height: 40px;
+    width :250px;
+    font-size: 27px;
+    line-height: 28px;
+    letter-spacing: -2px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.StartMyJourney{
+    box-sizing: border-box;
+    height:10vh;
+    width:10vh;
+    border-radius: 50%;
+    background: #444;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    z-index: 1;
+
+}
+
+.StartMyJourney p{
+    font-family:"Gill Sans", Verdana;
+    font-size: calc(7px + (15 - 7) * ((100vw - 375px) / (1600 - 375)));
+    line-height: 10px;
+    color: #FFFBDF;
+    text-align: center;
+    letter-spacing: 0px;
+    margin-top : 0px;
+
+}
+
+
+
+@media screen and (max-width:480px){
+    .landingContainer{
+        flex-direction: column-reverse;
+
+    }
+    .frame{
+        height:380px;
+        width:250px;
+    }
+    .portfolio {
+
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .frame img {
+        background: rgba(255, 255, 255,0.1);
+        border-radius: 150px 150px 10px 10px;
+        border: 2px solid #444;
+        height:230px;
+        width:230px;
+    }
+    .name {
+
+        height: 30px;
+        width :230px;
+
+    }
+    .jobTitle1 {
+        height: 30px;
+        width :230px;
+        margin-top: 2px;
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .jobTitle2 {
+        font-weight: 100;
+        height: 30px;
+        width :230px;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+}
+
+

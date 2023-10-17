@@ -1,0 +1,74 @@
+.contactMeContainer {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
+  grid-template-rows: 1fr 3fr 3fr 3fr;
+  grid-template-areas:
+    ". . . . ."
+    ".  hearing hearing hearing ."
+    ". email skype linkedIn ."
+    ". . . . .";
+}
+
+.hearingFromYou {
+  grid-area: hearing;
+  color: #444;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  line-height: 60px;
+  font-size: 60px;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
+
+.Email,
+.Skype,
+.LinkedIn {
+  height: 200px;
+  width: 120px;
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.3)
+  );
+
+  border-radius: 60px 60px 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+    rgba(0, 0, 0, 0.07) 0px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: #444;
+  font-family: "Gill Sans", Verdana;
+  font-size: 20px;
+  justify-self: center;
+  align-self: center;
+}
+
+.Email {
+  grid-area: email;
+}
+.Skype {
+  grid-area: skype;
+}
+.LinkedIn {
+  grid-area: linkedIn;
+}
+a {
+  color: #444;
+  text-decoration: none; /* no underline */
+}
+
+.pdf{
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  line-height: 60px;
+  font-size: 20px;
+  
+}
