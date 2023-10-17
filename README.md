@@ -1,4 +1,4 @@
 My Portfolio was created by the React framework
 
-## npm install
-## npm start
+1) npm install
+2) npm start
